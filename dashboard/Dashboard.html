@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+            }
+
+            .nav-icons {
+                display: flex;
+                gap: 20px;
+            }
+
+            .nav .account {
+                margin-left: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .icon-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+        
+            .icon-wrapper i {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
+            .sec {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            .sec input[type="text"] {
+                width: 400px;
+                padding: 8px;
+                display: flex;
+                position: absolute;
+                justify-items: center;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .sec button {
+                background-color: green;
+                color: black;
+                border-radius: 5px;
+                margin-left: auto;
+            }
+
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                align-content: center;
+            }
+
+            table th, table td {
+                padding: 12px;
+                border: 1px solid #ccc;
+                text-align: left;
+                align-content: center;
+            }
+
+            .view-btn {
+                padding: 5px 10px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+    </head>
+    <body>
+        
+        <div class="nav">
+            <img src="logo/images.jpg" alt="">
+            <span>sharda university</span>
+
+            
+            <div class="nav-icons">
+                <div class="icon-wrapper">
+                    <i class="ri-home-3-fill"></i>
+                    <span>Home</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="ri-dashboard-fill"></i>
+                    <span>Dashboard</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="ri-file-list-fill"></i>
+                    <span>Content</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="ri-graduation-cap-fill"></i>
+                    <span>Course</span>
+                </div>
+                <div class="icon-wrapper">
+                    <i class="ri-user-3-fill"></i>
+                    <span>Users</span>
+                </div>
+            </div>
+
+          
+            <div class="account">
+                <i class="ri-account-circle-fill"></i>
+                <span>Account</span>
+            </div>
+        </div>
+
+        
+        <div class="sec">
+            <input type="text" placeholder="Search here">
+            <i class="ri-filter-fill"></i>
+            <button>Create user</button>
+        </div>
+
+
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Batches</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nooridemo</td>
+                        <td>noori@gmail.com</td>
+                        <td>Noori</td>
+                        <td>Student</td>
+                        <td>Tech Team Testing Program Batch</td>
+                        <td><button class="view-btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nooridemo</td>
+                        <td>noori@gmail.com</td>
+                        <td>Noori</td>
+                        <td>Student</td>
+                        <td>Tech Team Testing Program Batch</td>
+                        <td><button class="view-btn">View</button></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Nooridemo</td>
+                        <td>noori@gmail.com</td>
+                        <td>Noori</td>
+                        <td>Student</td>
+                        <td>Tech Team Testing Program Batch</td>
+                        <td><button class="view-btn">View</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </body>
+</html>
