@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart ui basic</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    #main{
+        display: flex;
+        justify-content: space-between;
+    }
+    #fk {
+        height: 50px;
+        width: 70px;
+    }
+    #fk img {
+        height: 50px;
+        width: 70px;
+        width: 100%;
+        height: 100%;
+    }
+    #sb {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+    }
+    #sb input[type="Text"] {
+        width: 100%;
+        padding: 8px 40px; 
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    #sb .ri-arrow-down-s-line {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translate(-50%);
+        color: #ccc;
+    }
+    #sb .ri-search-line {
+        position: absolute;
+        right: 10px; 
+        top: 50%;
+        transform: translateY(-50%);
+        color: #ccc;
+        font-size: 18px; 
+    }
+
+    #grid {
+        display: grid;
+        grid-template-areas: 
+            "first first first"
+            "first first second"
+            "first first third";
+    }
+    #grid > div {
+        border: 1px solid #000;
+        height: 220px;
+        width: 300px;
+    }
+</style>
+</head>
+<body>
+    <div id="main">
+       <div id="fk">
+        <img src="flipkart.jpg" alt="">
+       </div>
+       <div id="menu">
+        <i class="ri-menu-line"></i>
+        <span>Menu</span>
+       </div>
+       <div id="sb">
+        <input type="Text" placeholder="Search Product,Brands and mobile">
+        <i class="ri-search-line"></i>
+        <i class="ri-arrow-down-s-line"></i>
+       </div>
+
+       <div id="cart">
+        <i class="ri-shopping-cart-2-line"></i>
+       </div>
+       <div id="acc">
+        <i class="ri-user-3-line"></i>
+       </div> 
+    </div>
+    <section>
+        <div id="option">
+            <i class="ri-discount-percent-line"></i>
+            <i class="ri-bread-line"></i>
+            <i class="ri-smartphone-line"></i>
+            <i class="ri-sofa-line"></i>
+            <i class="ri-handbag-line"></i>
+
+        </div>
+    </section>
+    <div id="grid">
+        <div style="grid-area:first;background-color:aqua"></div>
+        <div style="grid-area:second;background-color:violet"></div>
+        <div style="grid-area:third;background-color:blanchedalmond"></div>
+    </div>
+
+
+</body>
+</html>
