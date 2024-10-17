@@ -19,10 +19,19 @@
         height: 70px;
         width: 70px;
         background-color: rgb(214, 232, 233);
+        background-color: rgb(214, 232, 233);
     }
     #fk img {
         height: 70px;
+        height: 70px;
         width: 100%;
+        background-color: rgb(214, 232, 233);
+    }
+    #menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -220px; 
         background-color: rgb(214, 232, 233);
     }
     #menu {
@@ -38,22 +47,33 @@
         align-items: center;
         width: 800px;
         margin-left: -200px;
+        width: 800px;
+        margin-left: -200px;
     }
+    #sb input[type="text"] {
     #sb input[type="text"] {
         width: 100%;
         padding: 8px 40px; 
         border: 1px solid #ccc;
         border-radius: 8px;
         text-align: center;
+        text-align: center;
     }
     #sb .category-wrapper {
+    #sb .category-wrapper {
         position: absolute;
+        display: flex;
+        align-items: center;
         display: flex;
         align-items: center;
         left: 10px;
         top: 50%;
         transform: translateY(-50%);
+        transform: translateY(-50%);
         color: #ccc;
+    }
+    #sb .ri-arrow-down-s-line {
+        margin-left: 8px;
     }
     #sb .ri-arrow-down-s-line {
         margin-left: 8px;
@@ -66,6 +86,7 @@
         color: #ccc;
         font-size: 18px; 
     }
+    #product-grid {
     #product-grid {
         display: grid;
         grid-template-columns: 2fr 1fr; 
@@ -162,7 +183,60 @@
         text-align: center;
         font-size: 14px;
         color: #333;
+    .product button {
+        background-color: #2874f0;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
     }
+    .product .badge {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(255, 0, 111);
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+    }
+    .bicycle-product {
+        background-color: #e0f7fa; 
+    }
+    .iphone-product {
+        background-color: #ffe0b2; 
+    }
+    .tv-product {
+        background-color: #e1bee7; 
+    }
+
+    @media (max-width: 768px) {
+        #product-grid {
+            grid-template-columns: 1fr; 
+        }
+        .left-column {
+            grid-row: auto;
+        }
+    }
+    #options {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+        background-color: rgb(214, 232, 233);
+    }
+    #options div {
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+    }
+    #options i {
+        font-size: 24px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
     #options i {
         font-size: 24px;
         display: block;
@@ -199,8 +273,60 @@
             <br></<br>
             <span>Sign in</span>
         </div> 
+        <div id="fk">
+            <img src="flipkart.jpg" alt="Flipkart Logo">
+        </div>
+        <div id="menu">
+            <i class="ri-menu-line"></i>
+            <br></<br>
+            <span>Menu</span>
+        </div>
+        <div id="sb">
+            <input type="text" placeholder="Search Product, Brands and mobile">
+            <span class="category-wrapper">
+                <span>All categories</span>
+                <i class="ri-arrow-down-s-line"></i>
+            </span>
+            <i class="ri-search-line"></i>
+        </div>
+        <div id="cart">
+            <i class="ri-shopping-cart-2-line"></i>
+            <br></<br>
+            <span>Cart</span>
+        </div>
+        <div id="acc">
+            <i class="ri-user-3-line"></i>
+            <br></<br>
+            <span>Sign in</span>
+        </div> 
     </div>
     <section>
+        <div id="options">
+            <div>
+                <i class="ri-discount-percent-line"></i>
+                <br></<br>
+                <span>Discount</span>
+            </div>
+            <div>
+                <i class="ri-bread-line"></i>
+                <br></<br>
+                <span>Grocery</span>
+            </div>
+            <div>
+                <i class="ri-smartphone-line"></i>
+                <br></<br>
+                <span>Mobile</span>
+            </div>
+            <div>
+                <i class="ri-sofa-line"></i>
+                <br></<br>
+                <span>Furniture</span>
+            </div>
+            <div>
+                <i class="ri-handbag-line"></i>
+                <br></<br>
+                <span>Fashion</span>
+            </div>
         <div id="options">
             <div>
                 <i class="ri-discount-percent-line"></i>
@@ -268,3 +394,4 @@
     </div>
 </body>
 </html>
+
